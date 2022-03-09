@@ -7,14 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix Clone</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./style/style.css">
+
+    <link rel="stylesheet" href="./style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="./style/owl/owl.theme.default.min.css">
 </head>
 
 <body>
     <header>
-        <div class="container">
+        <div class="container ps10">
             <h2 class="logo">
-                Netflix
+                NETFLIX
             </h2>
             <nav>
                 <a href="">Inicio</a>
@@ -26,7 +33,7 @@
     </header>
     <main>
         <div class="filme-principal">
-            <div class="info-filme">
+            <div class="info-filme ps10">
                 <h2>
                     House of Cards
                 </h2>
@@ -35,22 +42,58 @@
                     a nova temporada de House of Cards que está imperdível.
                 </p>
                 <div class="botoes">
-                    <button>
-                        ASSISTIR AGORA
+                    <button onclick="window.open('https://www.youtube.com/watch?v=8QnMmpfKWvo')"
+                        href="https://www.youtube.com/watch?v=8QnMmpfKWvo">
+                        <i class="fa-solid fa-play"></i>ASSISTIR AGORA
                     </button>
-                    <button>
-                        MAIS INFORMAÇÕES
+                    <button onclick="window.open('https://www.imdb.com/title/tt1856010/')">
+                        <i class="fa-solid fa-circle-info"></i>MAIS INFORMAÇÕES
                     </button>
                 </div>
             </div>
         </div>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat sint inventore optio. Perspiciatis
-            blanditiis dignissimos, reprehenderit, iure velit sapiente voluptates quaerat aperiam harum cum autem, nemo
-            laborum repellendus porro repudiandae?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis labore aliquam eveniet harum quaerat vitae
-            nam, sunt deleniti, expedita, quia nesciunt ullam magni reiciendis sapiente quos illo illum alias facere.
-        </p>
+        <div class="carousel-filmes">
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img src="./img/mini1.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="./img/mini2.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="./img/mini3.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="./img/mini4.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="./img/mini5.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="./img/mini6.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="./img/mini7.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="./img/mini8.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="./img/mini9.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="./img/mini10.jpg" alt="">
+                </div>
+            </div>
+        </div>
     </main>
 </body>
+
+<script src="https://kit.fontawesome.com/b8b1685aee.js" crossorigin="anonymous"></script>
+
+<script src="./js/owl/jquery.min.js" crossorigin="anonymous"></script>
+<script src="./js/owl/owl.carousel.min.js" crossorigin="anonymous"></script>
+<script src="./js/owl/setup.js" crossorigin="anonymous"></script>
+
 
 </html>

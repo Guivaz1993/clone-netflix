@@ -15,7 +15,7 @@ body{
     font-family: 'Arial', Times, serif;
     color:white;
 
-    padding: 0px 15px;
+    padding: 12px 40px;
 }
 
 .container{
@@ -23,18 +23,16 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 
-    padding: 5px 15px;
+    padding: 5px 0px;
 }
 
 .logo{
+    font-family: 'League Gothic', sans-serif;
+    font-size: 60px;
+
     color: var(--vermelho);
-
-    font-size: 40px;
-}
-
-nav{
-    margin-right: 15px;
 }
 
 nav a{
@@ -50,35 +48,29 @@ nav a:hover{
 }
 
 .filme-principal{
-    align-self: center;
-
     font-size: 16px;
 
-    margin: 5px 15px 30px;
+    margin: 5px 0px 30px;
 
-    height: 90vh;
+    height: 70vh;
 
-
-    position: relative;
-
-    background-image: url('../img/capa-house.jpg');
-    background-size: cover;
+    background: linear-gradient(rgba(0,0,0,.70),rgba(0,0,0,.70)50%), url('../img/capa-house.jpg');
+    background-size:  cover ;
+    background-repeat: no-repeat;
 }
 
 .info-filme{
-    width: 40%;
+    width: 80%;
+    height: 100%;
 
-    position:absolute;
-
-    bottom: 0px;
-
-    background: linear-gradient(rgba(0,0,0,.90),rgba(0,0,0,.90)100%);
-
-    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .info-filme h2{
     font-size: 40px;
+    margin-top: 15px;
     margin-bottom: 20px;
 }
 
@@ -89,28 +81,61 @@ nav a:hover{
 }
 
 .botoes{
+    width: 50%;
+
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    margin-bottom: 15px;
 }
 
 .info-filme button{
     all: unset;
     cursor: pointer;
     border-radius: 3px;
+    
+    min-width: 200px;
+    min-height: 46px;
 
-    background-color: rgba(0,0,0,.50);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: rgba(0,0,0,.90);
     color: white;
+    
+    font-size: 14px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
-    font-size: 12px;
 
-    padding: 15px 30px;
+    margin-bottom: 5px;
+
+    transition: 0.4s ease all;
 }
 
 
 .info-filme button:hover{
+    font-weight: bold;
+
     background-color:
-    white;
+    rgba(255, 255, 255, 0.90);
     color:
     rgba(0,0,0);
+}
+
+i{
+    margin-right: 8px;
+}
+
+.ps10{
+    padding: 0px 20px;
+}
+
+item .img{
+    height: 100%;
+    width: 100%;
+
+    display: block;
 }
